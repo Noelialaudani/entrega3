@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../multimedia/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css"/>
+</head>
+<body class="fondoPagina">
+    <header id="header">
+        <img src="../multimedia/Logo.jpg"alt="logo mil flores"title="logo mil flores">
+        <nav>
+            <ul id="menuPaginas">
+                <li class="menuLista"><a href="../index.html">Inicio</a></li>
+                <li class="menuLista"><a href="envios.html">Envíos y Entregas</a></li>
+                <li class="menuLista"><a href="pago.html">Métodos de Pago</a></li>
+                <li class="menuLista"><a href="personalizados.html">Pedidos Personalizados</a></li>
+                <li class="menuLista"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article class="article">
+            <h3 class="aside">Formulario de Contacto</h3>
+            <form class="listaArticle">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" name="nombre"/>
+
+                <label for="Correo">Correo Electrónico</label>
+                <input type="email"name="email">
+
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" id="contraseña">
+    
+                <label for="tipodeconsulta">¿Cuál es tu consulta?</label>
+                <input type="radio"name="tipodeconsulta">Presupuesto
+                <input type="radio"name="tipodeconsulta">Realizar pedido
+                <input type="radio"name="tipodeconsulta">Otro
+
+                <label for="pais">¿Desde dónde nos escribís?</label>
+                <select name="pais">   
+                    <option value="--">---</option>
+                    <option value="ARG">Argentina</option>
+                    <option value="URU">Uruguay</option>
+                    <option value="otro">Otro</option>
+                </select> 
+
+                <label for="mensaje">Dejanos tu mensaje acá:</label>
+                <textarea name="mensaje" id="" cols="100" rows="10"></textarea>
+                    
+                <label for="newsletter">Suscribirme al Newsletter</label>
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <div>
+                <input type="submit"value"Enviar">
+                </div>
+            </form>
+
+        </article>
+    </section>
+
+    <footer>
+        <div id="footer">
+            <h4 class="redesSociales">Redes Sociales:</h4>
+            <a class="linkRedes" href="https://www.instagram.com/milfloresartesanias/">Instagram:@milfloresartesanias</a> 
+            <a class="linkRedes" href="https://m.facebook.com/Milfloresartesanias?_rdr">Facebook: Mil Flores Artesanias</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

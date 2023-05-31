@@ -1,0 +1,220 @@
+.fondoPagina{
+    background-color:#FCC0BF;
+}
+
+#header{
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+#menuPaginas{
+    list-style-type: none;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-bottom: 20px;
+    
+}
+
+.menuLista{
+    display: inline-block;
+    padding:0px 20px;
+}
+
+
+.aside{
+    background-image: url("../multimedia/fondotitulos.jpg");
+    font-size: 30px;
+    text-align: center;
+    padding:10px;
+    margin:10px;
+}
+
+
+.articleInicio{
+    background-color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:30px;
+    padding-bottom: 20px;
+}
+
+.tituloArticleInicio{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin:20px
+}
+
+
+.textoArticleInicio{
+    font-size: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.contenedorGaleria{
+    display: grid;
+    grid-template-columns:repeat(5,200px);
+    grid-template-rows: repeat(6,200px);
+    gap: 20px 20px;
+    grid-template-areas:
+        "imagen1 imagen1 imagen2 imagen2 imagen2"
+        "imagen1 imagen1 imagen2 imagen2 imagen2"
+        "imagen1 imagen1 imagen2 imagen2 imagen2"
+        "imagen3 imagen3 imagen3 imagen4 imagen4"
+        "imagen3 imagen3 imagen3 imagen4 imagen4"
+        "imagen3 imagen3 imagen3 imagen4 imagen4";
+    justify-content: center;
+    padding: 20px;
+}
+
+.imagen1{
+    grid-area: imagen1;
+    background-image: url(../multimedia/imagen1.jpg);
+    background-position: center;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+.imagen2{
+    grid-area: imagen2;
+    background-image: url(../multimedia/imagen2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen3{
+    grid-area: imagen3;
+    background-image: url(../multimedia/imagen3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen4{
+    grid-area: imagen4;
+    background-image: url(../multimedia/imagen4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Video{
+    background-color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.tituloVideo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#footer{
+    background-color: #FFE983;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    padding-bottom:15px;
+    padding-top:0.5px;
+}
+
+.redesSociales{
+        text-decoration: underline;
+        text-align: center;
+}
+
+.linkRedes{
+        display:inline-block;
+        justify-content: center;
+        margin:0px 30px;
+}
+
+.listaArticle{
+    font-size: 20px;
+    background-color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textoInformacion{
+    font-size: 25px;
+    background-color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:20px;
+}
+
+#tabla{
+    font-size: 25px;
+    justify-items: center;
+    background-color: white;
+}
+
+
+
+.gridContainer{
+    justify-content: center;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .bodyInicio{
+        grid-template-columns: (2,1fr);
+        grid-template-rows: 1fr 0.5fr;
+        grid-template-areas:
+        "header header"
+        "aside aside"
+        "article section"
+        "asidevideo asidevideo"
+        "footer footer";
+    }
+    
+    .header{
+        grid-area: header;
+        background-color: white;
+        text-align: center;
+    }
+
+    .aside{
+        grid-area: aside;
+        background-image: url("../multimedia/fondotitulos.jpg");
+        text-align: center;
+    }
+
+    .articleInicio{
+        grid-area: article;
+        background-color: white;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .contenedorGaleria{
+        grid-area: section;
+        justify-content: center;
+    }
+
+    .Video{
+        grid-area: asidevideo;
+        background-color: white;
+        text-align: center;
+    }
+
+    .footer{
+        grid-area: footer;
+        background-color: #FFE983;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+}
